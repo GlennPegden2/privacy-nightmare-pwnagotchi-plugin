@@ -84,14 +84,14 @@ class PrivacyNightmare(plugins.Plugin):
 
 
     def on_ui_setup(self, ui):
-        h_pos = (1, 76)
+        pos = (1, 76)
         ui.add_element('pn_status', LabeledValue(color=BLACK, label='', value='PN: Active',
-                                                   position=h_pos,
+                                                   position=pos,
                                                    label_font=fonts.Small, text_font=fonts.Small))
 
-        h_pos = (100, 109)
+        pos = (300, 109)
         ui.add_element('pn_count', LabeledValue(color=BLACK, label='', value='PN: Active',
-                                                   position=h_pos,
+                                                   position=pos,
                                                    label_font=fonts.Small, text_font=fonts.Small))
 
     def on_ui_update(self, ui):
